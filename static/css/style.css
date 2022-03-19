@@ -647,25 +647,27 @@ td{
 
 .form-container{
     
-    width:80%;
+    max-width:80%;
     height:70%;
     margin:auto;
     margin-top:5%;
+
    
 }
 
 .form{
-    
+    width: 100%;
     height: 100%;
+ 
 }
 
 fieldset{
-    width:80%;
-    margin:auto;
+
+ 
     height: 100%;
     border: 2px solid #DAA520;
     display:grid;
-    padding: 20px;
+    padding: 10px;
     grid-template-columns:1fr 1fr;
     gap: 1rem;
   
@@ -728,10 +730,12 @@ textarea{
 
     .form-container{
         margin-top:8%;
+    
     }
 
     input{
         height: 40%;
+        width:100%;
     }
 
     
@@ -770,7 +774,7 @@ textarea{
 .faq{
  
     width: 40%;
-    height:160px;
+    height:180px;
     padding:20px;
     box-shadow: 0 0 15px #bbb;
     border: 2px  solid #DAA520;
@@ -798,6 +802,27 @@ textarea{
         margin:5%;
     }
 }
+
+@media screen and (max-width:680px){
+   
+    .faq{
+        width:100%;
+        height:200px;
+    }
+
+    .faq-body p{
+        margin-top: 2px;
+    }
+
+    .faq-body p{
+        font-size: .85em
+    }
+
+    .faq-heading h3{
+        font-size:.9em;
+    }
+}
+
 
 
 .success-box{
