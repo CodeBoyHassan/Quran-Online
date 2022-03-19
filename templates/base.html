@@ -1,0 +1,58 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{% block title%} {% endblock %}</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="logo-img" src="{% static 'images/logo.png'%}" alt="">
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="{% url 'home'%}">Home</a></li>
+            <li  class="nav-item"><a href="{% url 'register'%}">Register</a></li>
+            <li  class="nav-item"><a href="{% url 'faq' %}">About</a></li>
+        </ul>
+    </nav>
+
+ 
+
+
+    {% block content %}
+
+    {% endblock %}
+
+
+ 
+    <footer class="footer">
+        <h3 class="footer-txt">© Quran Online</h3>
+       
+        <h3 class="contact-no"> <i class="fa fa-whatsapp" style="font-size:24px; color: black;"></i> 03323231444</h3>
+    </footer>
+
+
+
+    <script src="{% static 'js/script.js' %}"></script> 
+    <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
+
+        
+        
+   
+    </body>
+</html>

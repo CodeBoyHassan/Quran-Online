@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}
+    Book a 2-Day Trial - Quran Online
+{% endblock %}
+{% block content%}
+
+<section class="register">
+    <div class="heading-container">
+        <h1>Book a Free Trial</h1>
+    </div>
+    <div class="form-container">
+
+        <form action="" method="post" class="form">
+            {% csrf_token %}
+            <fieldset>
+                <legend>Please fill in the required details</legend>
+                <input type="text" name="full-name" placeholder="Full Name" id="">
+                <input type="email" name="email" placeholder="Email" id="">
+                <input type="tel" name="phone" placeholder="Whatsapp/Phone Number" id="">
+                <input type="text" name="nationality" placeholder="Nationality" id="">
+                <textarea name="message" id="" cols="30" rows="4" placeholder="Additional Message (optional)"></textarea>
+ 
+                <input type="submit" value="Submit" id="submit">
+                
+            </fieldset>
+        </form>
+
+
+
+    </div>
+</section>
+
+
+
+{% endblock %}

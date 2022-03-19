@@ -1,0 +1,1 @@
+web: gunicorn quran_online.wsgi
