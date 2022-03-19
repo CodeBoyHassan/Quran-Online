@@ -369,7 +369,7 @@ td{
 
 .register-container{
     margin-top: 8%;
-    padding-top: 4%;
+    padding-top:4%;
 }
 
 .register-heading h1{
@@ -683,7 +683,7 @@ legend{
 
 
 input{
-    height:60%;
+    height:50px;
     font-family: 'Poppins';
     padding:8px;
     border:1px solid black;
@@ -731,7 +731,7 @@ textarea{
     }
 
     input{
-        height: 40%;
+        height: 50px;
         width:90%;
         margin:auto;
     }
