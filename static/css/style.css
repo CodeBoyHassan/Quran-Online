@@ -367,7 +367,7 @@ td{
     box-shadow: 0 0 10px #ccc;
     
     
-}
+} 
 
 
 .register-container{
@@ -660,7 +660,8 @@ td{
 }
 
 fieldset{
-    
+    width:80%;
+    margin:auto;
     height: 100%;
     border: 2px solid #DAA520;
     display:grid;
