@@ -7,9 +7,6 @@
     
 }
 
-body{
-   
-}
 
 a{
     font-family: 'Poppins', sans-serif;
@@ -735,12 +732,16 @@ textarea{
 
     input{
         height: 40%;
-        width:80%;
+        width:90%;
+        margin:auto;
     }
 
     textarea{
-        width:80%;
+        width:90%;
+        margin:auto;
     }
+
+ 
 
     
 }
